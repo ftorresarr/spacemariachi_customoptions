@@ -1,0 +1,13 @@
+app/code/local/Spacemariachi/Custopt/Block/Adminhtml/Button.php app/code/local/Spacemariachi/Custopt/Block/Adminhtml/Button.php
+app/code/local/Spacemariachi/Custopt/Block/Adminhtml/Edit.php app/code/local/Spacemariachi/Custopt/Block/Adminhtml/Edit.php
+app/code/local/Spacemariachi/Custopt/Block/Adminhtml/Type/Select.php app/code/local/Spacemariachi/Custopt/Block/Adminhtml/Type/Select.php
+app/code/local/Spacemariachi/Custopt/controllers/Adminhtml/EditoptionsController.php app/code/local/Spacemariachi/Custopt/controllers/Adminhtml/EditoptionsController.php
+app/code/local/Spacemariachi/Custopt/etc/config.xml app/code/local/Spacemariachi/Custopt/etc/config.xml
+app/code/local/Spacemariachi/Custopt/Helper/Data.php app/code/local/Spacemariachi/Custopt/Helper/Data.php
+app/code/local/Spacemariachi/Custopt/Model/Observer/Abstract.php app/code/local/Spacemariachi/Custopt/Model/Observer/Abstract.php
+app/code/local/Spacemariachi/Custopt/Model/Observer.php app/code/local/Spacemariachi/Custopt/Model/Observer.php
+app/design/adminhtml/default/default/layout/spacemariachi/editoptions.xml app/design/adminhtml/default/default/layout/spacemariachi/editoptions.xml
+app/design/adminhtml/default/default/template/catalog/product/view/options/button.phtml app/design/adminhtml/default/default/template/catalog/product/view/options/button.phtml
+app/design/adminhtml/default/default/template/sales/items/column/nameplus.phtml app/design/adminhtml/default/default/template/sales/items/column/nameplus.phtml
+app/design/adminhtml/default/default/template/spacemariachi/catalog/product/composite/fieldset/qty.phtml app/design/adminhtml/default/default/template/spacemariachi/catalog/product/composite/fieldset/qty.phtml
+app/etc/modules/Spacemariachi_Custopt.xml app/etc/modules/Spacemariachi_Custopt.xml

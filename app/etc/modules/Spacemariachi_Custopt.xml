@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Spacemariachi_Custopt>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Spacemariachi_Custopt>
+    </modules>
+</config>

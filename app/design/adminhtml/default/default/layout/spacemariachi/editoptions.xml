@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+    <adminhtml_sales_order_view>
+        <reference name="head">
+            <action method="addJs"><file>mage/adminhtml/product/composite/configure.js</file></action>
+        </reference>
+    </adminhtml_sales_order_view>
+    <SPACEMARIACHI_ADMINHTML_CATALOG_PRODUCT_COMPOSITE_CONFIGURE>
+        <block type="adminhtml/catalog_product_composite_fieldset" name="product.composite.fieldset" output="toHtml">
+            <block name="product.composite.fieldset.options" type="spacemariachi_custopt/adminhtml_edit" template="catalog/product/composite/fieldset/options.phtml">
+                <action method="addOptionRenderer">
+                    <type>text</type>
+                    <block>catalog/product_view_options_type_text</block>
+                    <template>catalog/product/composite/fieldset/options/type/text.phtml</template>
+                </action>
+                <action method="addOptionRenderer">
+                    <type>file</type>
+                    <block>catalog/product_view_options_type_file</block>
+                    <template>catalog/product/composite/fieldset/options/type/file.phtml</template>
+                </action>
+                <action method="addOptionRenderer">
+                    <type>select</type>
+                    <block>spacemariachi_custopt/adminhtml_type_select</block>
+                    <template>catalog/product/composite/fieldset/options/type/select.phtml</template>
+                </action>
+                <action method="addOptionRenderer">
+                    <type>date</type>
+                    <block>catalog/product_view_options_type_date</block>
+                    <template>catalog/product/composite/fieldset/options/type/date.phtml</template>
+                </action>
+                <block type="core/template" name="product.composite.fieldset.options.js" as="options_js" template="catalog/product/composite/fieldset/options/js.phtml"/>
+            </block>
+            <block type="adminhtml/catalog_product_composite_fieldset_qty" name="product.composite.fieldset.qty" template="spacemariachi/catalog/product/composite/fieldset/qty.phtml"/>
+        </block>
+    </SPACEMARIACHI_ADMINHTML_CATALOG_PRODUCT_COMPOSITE_CONFIGURE>
+</layout>

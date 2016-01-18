@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Spacemariachi_Custopt>
+            <version>0.1.0</version>
+        </Spacemariachi_Custopt>
+    </modules>
+    <global>
+        <models>
+            <spacemariachi_custopt>
+                <class>Spacemariachi_Custopt_Model</class>
+                <resourceModel>spacemariachi_custopt_resource</resourceModel>
+            </spacemariachi_custopt>
+            <spacemariachi_custopt_resource>
+                <class>Spacemariachi_Custopt_Model_Resource</class>
+            </spacemariachi_custopt_resource>
+        </models>
+        <blocks>
+            <spacemariachi_custopt>
+                <class>Spacemariachi_Custopt_Block</class>
+            </spacemariachi_custopt>
+        </blocks>
+        <helpers>
+            <spacemariachi_custopt>
+                <class>Spacemariachi_Custopt_Helper</class>
+            </spacemariachi_custopt>
+        </helpers>
+    </global>
+    <adminhtml>
+        <events>
+            <adminhtml_block_html_before>
+                <observers>
+                    <spacemariachi_custopt>
+                        <type>model</type>
+                        <class>Spacemariachi_Custopt_Model_Observer</class>
+                        <method>adminhtmlBlockHtmlBefore</method>
+                    </spacemariachi_custopt>
+                </observers>
+            </adminhtml_block_html_before>
+        </events>
+        <menu>
+            <tutorial_menu translate="title" module="spacemariachi_custopt">
+                <title>edit</title>
+                <sort_order>9999</sort_order>
+                <children>
+                    <first_page module="spacemariachi_custopt">
+                        <title>Our First Page</title>
+                        <action>adminhtml/editoptions/confirm</action>
+                    </first_page>
+                </children>
+            </tutorial_menu>
+        </menu>
+
+        <layout>
+            <updates>
+                <spacemariachi_custopt>
+                    <file>spacemariachi/editoptions.xml</file>
+                </spacemariachi_custopt>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <!--pacemariachi_customopt>
+                <use>admin</use>
+                <args>
+                    <frontName>editopt</frontName>
+                    <module>Spacemariachi_Custopt_Adminhtml</module>
+                </args>
+            </pacemariachi_customopt-->
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Spacemariachi_Custopt before="Mage_Adminhtml_Sales_Order">Spacemariachi_Custopt_Adminhtml</Spacemariachi_Custopt>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
